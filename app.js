@@ -11,6 +11,7 @@ var boardRouter = require('./routes/board');
 var chooseRouter = require('./routes/choose');
 
 var app = express();
+app.use(express.static('public'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
